@@ -13,6 +13,91 @@ Este proyecto implementa una solución de *Data Lakehouse* en **Snowflake** para
 | **Silver (Staging/Core)** | Limpieza, estandarización y unificación. | Tablas unificadas (`taxi_unification`) y *staging* de dimensiones (`stg_*`).| Modelo (`staging`, `core`) |
 | **Gold (Marts)** | Modelo en estrella optimizado para negocio. | **Hecho:** `fct_trips`. **Dimensiones:** `dim_date`, `dim_zones`, `dim_time`, etc. | Modelo (`marts/gold`) |
 
+erDiagram
+    dim_date {
+      int date_sk PK
+      date date_key
+      int year
+      int month
+      string year_month_key
+      int day_of_month
+      string day_of_week_name
+      int day_of_week_iso
+    }
+
+    dim_time {
+      int time_sk PK
+      int hour_of_day
+      string time_slot
+    }
+
+    dim_zones {
+      int zone_sk PK
+      string borough
+      int zone_id
+    }
+
+    dim_vendor {
+      int vendor_sk PK
+      string vendor_description
+    }
+
+    dim_rate_code {
+      int rate_code_sk PK
+      string rate_code_description
+    }
+
+    dim_payment_type {
+      int payment_type_sk PK
+      string payment_type_description
+    }
+
+    dim_trip_type {
+      int trip_type_sk PK
+      string trip_type_description
+    }
+
+    dim_service_type {
+      string service_type_sk PK
+    }
+
+    fact_trips {
+      int pickup_date_sk FK
+      int dropoff_date_sk FK
+      int pickup_time_sk FK
+      int dropoff_time_sk FK
+      int pu_zone_sk FK
+      int do_zone_sk FK
+      int vendor_sk FK
+      int rate_code_sk FK
+      int payment_type_sk FK
+      int trip_type_sk FK
+      string service_type_sk FK
+      int passenger_count
+      float trip_distance
+      numeric fare_amount
+      numeric extra_charge
+      numeric mta_tax
+      numeric tip_amount
+      numeric tolls_amount
+      numeric improvement_surcharge
+      numeric congestion_surcharge
+      numeric total_amount
+      int trip_duration_seconds
+    }
+
+    fact_trips }o--|| dim_date : pickup_date_sk
+    fact_trips }o--|| dim_date : dropoff_date_sk
+    fact_trips }o--|| dim_time : pickup_time_sk
+    fact_trips }o--|| dim_time : dropoff_time_sk
+    fact_trips }o--|| dim_zones : pu_zone_sk
+    fact_trips }o--|| dim_zones : do_zone_sk
+    fact_trips }o--|| dim_vendor : vendor_sk
+    fact_trips }o--|| dim_rate_code : rate_code_sk
+    fact_trips }o--|| dim_payment_type : payment_type_sk
+    fact_trips }o--|| dim_trip_type : trip_type_sk
+    fact_trips }o--|| dim_service_type : service_type_sk
+
 ---
 
 ## 2. Ingesta y Cobertura Histórica (Mage) 
