@@ -1,0 +1,328 @@
+blocks:
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/marts/dimensions/dim_date.sql
+    file_source:
+      path: dbt/scheduler2/models/marts/dimensions/dim_date.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/marts/facts/fct_trips
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/marts/dimensions/dim_date
+  retry_config: null
+  status: updated
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/taxi_unification
+  uuid: dbt/scheduler2/models/marts/dimensions/dim_date
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/marts/dimensions/dim_payment_type.sql
+    file_source:
+      path: dbt/scheduler2/models/marts/dimensions/dim_payment_type.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/marts/facts/fct_trips
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/marts/dimensions/dim_payment_type
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/taxi_unification
+  uuid: dbt/scheduler2/models/marts/dimensions/dim_payment_type
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/marts/dimensions/dim_rate_code.sql
+    file_source:
+      path: dbt/scheduler2/models/marts/dimensions/dim_rate_code.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/marts/facts/fct_trips
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/marts/dimensions/dim_rate_code
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/taxi_unification
+  uuid: dbt/scheduler2/models/marts/dimensions/dim_rate_code
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/marts/dimensions/dim_service_type.sql
+    file_source:
+      path: dbt/scheduler2/models/marts/dimensions/dim_service_type.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/marts/facts/fct_trips
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/marts/dimensions/dim_service_type
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/taxi_unification
+  uuid: dbt/scheduler2/models/marts/dimensions/dim_service_type
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/marts/dimensions/dim_time.sql
+    file_source:
+      path: dbt/scheduler2/models/marts/dimensions/dim_time.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/marts/facts/fct_trips
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/marts/dimensions/dim_time
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/taxi_unification
+  uuid: dbt/scheduler2/models/marts/dimensions/dim_time
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/marts/dimensions/dim_trip_type.sql
+    file_source:
+      path: dbt/scheduler2/models/marts/dimensions/dim_trip_type.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/marts/facts/fct_trips
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/marts/dimensions/dim_trip_type
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/taxi_unification
+  uuid: dbt/scheduler2/models/marts/dimensions/dim_trip_type
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/marts/dimensions/dim_vendor.sql
+    file_source:
+      path: dbt/scheduler2/models/marts/dimensions/dim_vendor.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/marts/facts/fct_trips
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/marts/dimensions/dim_vendor
+  retry_config: null
+  status: updated
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/taxi_unification
+  uuid: dbt/scheduler2/models/marts/dimensions/dim_vendor
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/marts/dimensions/dim_zones.sql
+    file_source:
+      path: dbt/scheduler2/models/marts/dimensions/dim_zones.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/marts/facts/fct_trips
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/marts/dimensions/dim_zones
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/stg_taxis_zones
+  uuid: dbt/scheduler2/models/marts/dimensions/dim_zones
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/marts/facts/fct_trips.sql
+    file_source:
+      path: dbt/scheduler2/models/marts/facts/fct_trips.sql
+      project_path: dbt/scheduler2
+    limit: 1000
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/marts/facts/fct_trips
+  retry_config: null
+  status: updated
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/marts/dimensions/dim_rate_code
+  - dbt/scheduler2/models/staging/taxi_unification
+  - dbt/scheduler2/models/marts/dimensions/dim_payment_type
+  - dbt/scheduler2/models/marts/dimensions/dim_time
+  - dbt/scheduler2/models/marts/dimensions/dim_service_type
+  - dbt/scheduler2/models/marts/dimensions/dim_date
+  - dbt/scheduler2/models/marts/dimensions/dim_zones
+  - dbt/scheduler2/models/marts/dimensions/dim_vendor
+  - dbt/scheduler2/models/marts/dimensions/dim_trip_type
+  uuid: dbt/scheduler2/models/marts/facts/fct_trips
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/staging/stg_taxis_green.sql
+    file_source:
+      path: dbt/scheduler2/models/staging/stg_taxis_green.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/staging/taxi_unification
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/staging/stg_taxis_green
+  retry_config: null
+  status: updated
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/stg_taxis_zones
+  uuid: dbt/scheduler2/models/staging/stg_taxis_green
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/staging/stg_taxis_yellow.sql
+    file_source:
+      path: dbt/scheduler2/models/staging/stg_taxis_yellow.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/staging/taxi_unification
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/staging/stg_taxis_yellow
+  retry_config: null
+  status: updated
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/stg_taxis_zones
+  uuid: dbt/scheduler2/models/staging/stg_taxis_yellow
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/staging/stg_taxis_zones.sql
+    file_source:
+      path: dbt/scheduler2/models/staging/stg_taxis_zones.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/marts/dimensions/dim_zones
+  - dbt/scheduler2/models/staging/stg_taxis_yellow
+  - dbt/scheduler2/models/staging/stg_taxis_green
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/staging/stg_taxis_zones
+  retry_config: null
+  status: updated
+  timeout: null
+  type: dbt
+  upstream_blocks: []
+  uuid: dbt/scheduler2/models/staging/stg_taxis_zones
+- all_upstream_blocks_executed: false
+  color: null
+  configuration:
+    dbt_project_name: dbt/scheduler2
+    file_path: dbt/scheduler2/models/staging/taxi_unification.sql
+    file_source:
+      path: dbt/scheduler2/models/staging/taxi_unification.sql
+      project_path: dbt/scheduler2
+  downstream_blocks:
+  - dbt/scheduler2/models/marts/facts/fct_trips
+  - dbt/scheduler2/models/marts/dimensions/dim_rate_code
+  - dbt/scheduler2/models/marts/dimensions/dim_payment_type
+  - dbt/scheduler2/models/marts/dimensions/dim_time
+  - dbt/scheduler2/models/marts/dimensions/dim_service_type
+  - dbt/scheduler2/models/marts/dimensions/dim_date
+  - dbt/scheduler2/models/marts/dimensions/dim_vendor
+  - dbt/scheduler2/models/marts/dimensions/dim_trip_type
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/scheduler2/models/staging/taxi_unification
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks:
+  - dbt/scheduler2/models/staging/stg_taxis_yellow
+  - dbt/scheduler2/models/staging/stg_taxis_green
+  uuid: dbt/scheduler2/models/staging/taxi_unification
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-10-06 00:00:25.567609+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: prueba1_modeling
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: prueba1_modeling
+variables_dir: /home/src/mage_data/scheduler
+widgets: []
