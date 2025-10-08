@@ -31,7 +31,6 @@ Este proyecto implementa una solución de *Data Lakehouse* en **Snowflake** para
 | **Yellow Cab** | Ene 2015 - Ago 2025 | 116 | NINGUNO |
 | **Green Cab** | Ene 2015 - Ago 2025 | 115 | Mayo 2024 |
 
-*(**Nota:** Si algún mes no estuvo disponible en formato Parquet en la fuente, se documentó la brecha y se procedió con el siguiente mes, sin conversiones de formato. *
 
 ---
 
@@ -39,7 +38,7 @@ Este proyecto implementa una solución de *Data Lakehouse* en **Snowflake** para
 
 ### 3.1. Gestión de Secrets (Mage) 
 
-Todas las credenciales de conexión a Snowflake se almacenan de forma segura en **Mage Secrets**. El repositorio de código no contiene valores sensibles.
+Todas las credenciales de conexión a Snowflake se almacenan de forma segura en **Mage Secrets**. El repositorio de código no contiene valores sensibles. Las evidencias se encuentran en la carpeta de evidencias 
 
 | Nombre del Secret | Propósito |
 | :--- | :--- |
@@ -51,10 +50,7 @@ Todas las credenciales de conexión a Snowflake se almacenan de forma segura en 
 
 ### 3.2. Cuenta de Servicio con Privilegios Mínimos 
 
-* **Rol Usado:** `[TLC_DBT_TRANSFORM_ROLE]`
-* **Privilegios:** El rol se configuró con **permisos mínimos** (`USAGE`) sobre el Warehouse, la Base de Datos (`NY_TAXI2`) y los esquemas (`RAW`, `SILVER`, `GOLD`), cumpliendo con la restricción de prohibir cuentas personales con permisos amplios. 
-
-*(**Evidencia requerida:** La evidencia de la creación del rol y el resumen de sus privilegios (valores ocultos) se adjuntan en los entregables.)*
+Una captura con los permisos otorgados esta en la carpeta de evidencias.
 
 ---
 
@@ -70,23 +66,14 @@ Se realizó un experimento en la tabla de hechos más grande, `fct_trips` (capa 
 
 | Métrica (Consulta Representativa) | Base (Antes) | Clustering (Después) | Observación Clave |
 | :--- | :--- | :--- | :--- |
-| **Tiempo de Ejecución** | [Tiempo en segundos, ej: 8.5s] | [Tiempo en segundos, ej: 1.2s] | Reducción drástica del tiempo de ejecución. |
-| **Particiones Escaneadas** | [Número Alto, ej: 1250] | [Número Bajo, ej: 15] | Éxito en el *pruning* de micro-partitions.  |
-| **Profundidad de Clustering** | N/A | [Valor Bajo, ej: 3.5] | Indica que el ordenamiento físico es altamente efectivo. |
+| **Tiempo de Ejecución** | Compilation: 649ms, Execution: 625ms | Compilation: 127ms, Execution: 250ms | Reducción drástica del tiempo de ejecución. |
+| **Particiones Escaneadas** | 32 | 15 | Éxito en el *pruning* de micro-partitions.  |
 
-**Conclusión:** El *clustering* en `(pickup_date_sk, pu_zone_sk)` aporta un valor significativo, mejorando la eficiencia del cómputo. Se eligió esta combinación a largo plazo y se habilitó el *Auto-Clustering* para mantener el orden. Se evitó el **sobreclusterizar** para controlar los costos de mantenimiento. 
-
----
-
-## 5. Calidad y Documentación (dbt) [cite: 90, 120]
-
-* **Tests:** Implementados tests dbt (`not_null`, `unique`, `accepted_values`, `relationships`) para garantizar la calidad e integridad referencial de las llaves en la capa Gold. 
-* **Documentación:** El proyecto dbt incluye documentación de columnas y su *lineage* (origen), accesible mediante `dbt docs generate`. 
-* **Diccionario de Datos:** Se describe la semántica de las columnas finales en Gold.
+**Conclusión:** El *clustering* en `(pickup_date_sk, pu_zone_sk)` aporta un valor significativo, mejorando la eficiencia del cómputo. Se eligió esta combinación a largo plazo y se habilitó el *Auto-Clustering* para mantener el orden. Se evitó el **sobreclusterizar** para controlar los costos de mantenimiento. Y el Query que se uso de prueba esta en las evidencias tambien.
 
 ---
 
-## 6. Checklist de Aceptación (DM202501-PSet-2)
+## 5. Checklist de Aceptación (DM202501-PSet-2)
 
 | Requisito | Estado |
 | :--- | :--- |

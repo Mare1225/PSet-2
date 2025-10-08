@@ -1,0 +1,255 @@
+version: 2
+
+sources:
+  - name: ny_taxi2              
+    database: NY_TAXI2
+    schema: RAW 
+    quoting:                   
+      database: true 
+      schema: true
+      identifier: true
+    tables:
+      - name: ny_taxi_yellow          
+        identifier: NY_TAXI_YELLOW   
+      - name: ny_taxi_green         
+        identifier: NY_TAXI_GREEN 
+      - name: ny_taxi_zones          
+        identifier: NY_TAXI_ZONES  
+
+models:
+  - name: stg_taxis_yellow
+    description: Modelo de staging para viajes de taxi amarillos para cumplir con Silver.
+    columns:
+      # Reglas de Calidad (Nulos y Rangos)
+
+      - name: vendor_id
+        tests:
+          - not_null
+          - non_negative
+    
+      - name: passenger_count
+        tests:
+          - non_negative
+          - max_less_than:
+              max_value: 10
+              config:
+                severity: warn
+              
+      - name: trip_distance
+        tests:
+          - non_negative 
+          - max_less_than: 
+              max_value: 100
+              config:
+                severity: warn
+
+      - name: rate_code_id
+        tests:
+          - not_null
+          - non_negative 
+
+      - name: pu_location_id 
+        tests:
+          - not_null
+          - non_negative 
+
+      - name: do_location_id 
+        tests:
+          - not_null
+          - non_negative
+          
+      - name: fare_amount 
+        tests:
+          - not_null
+          - non_negative
+          - max_less_than: 
+              max_value: 500
+              config:
+                severity: warn
+
+      - name: extra_charge 
+        tests:
+          - non_negative
+
+      - name: mta_tax 
+        tests:
+          - non_negative
+          - max_less_than: 
+              max_value: 60
+              config:
+                severity: warn
+
+      - name: tip_amount 
+        tests:
+          - non_negative
+
+      - name: tolls_amount 
+        tests:
+          - non_negative
+          - max_less_than: 
+              max_value: 60
+              config:
+                severity: warn
+
+      - name: improvement_surcharge 
+        tests:
+          - non_negative
+          - max_less_than: 
+              max_value: 60
+              config:
+                severity: warn
+
+      - name: total_amount 
+        tests:
+          - non_negative
+
+      - name: congestion_surcharge 
+        tests:
+          - non_negative
+
+      - name: airport_fee 
+        tests:
+          - non_negative
+          - max_less_than: 
+              max_value: 150
+              config:
+                severity: warn
+      
+      - name: pickup_datetime_utc
+        tests:
+          - not_null
+          - column_a_lte_column_b:
+              column_b: dropoff_datetime_utc
+          - max_timestamp_lte_fixed:
+              value: '2025-08-31'
+          - min_timestamp_gte_fixed:
+              value: '2015-01-01'
+      
+      - name: dropoff_datetime_utc
+        tests:
+          - not_null
+          - max_timestamp_lte_fixed:
+              value: '2025-08-31'
+          - min_timestamp_gte_fixed:
+              value: '2015-01-01'
+
+  - name: stg_taxis_green
+    description: Modelo de staging para viajes de taxi amarillos para cumplir con Silver.
+    columns:
+      # Reglas de Calidad (Nulos y Rangos)
+
+      - name: vendor_id
+        tests:
+          - not_null
+          - non_negative
+
+      - name: trip_type
+        tests:
+          - not_null
+          - non_negative
+    
+      - name: passenger_count
+        tests:
+          - non_negative
+          - max_less_than:
+              max_value: 10
+              config:
+                severity: warn
+              
+      - name: trip_distance
+        tests:
+          - non_negative 
+          - max_less_than: 
+              max_value: 100
+              config:
+                severity: warn
+
+      - name: rate_code_id
+        tests:
+          - not_null
+          - non_negative 
+
+      - name: pu_location_id 
+        tests:
+          - not_null
+          - non_negative 
+
+      - name: do_location_id 
+        tests:
+          - not_null
+          - non_negative
+          
+      - name: fare_amount 
+        tests:
+          - not_null
+          - non_negative
+          - max_less_than: 
+              max_value: 500
+              config:
+                severity: warn
+
+      - name: extra_charge 
+        tests:
+          - non_negative
+
+      - name: mta_tax 
+        tests:
+          - non_negative
+          - max_less_than: 
+              max_value: 60
+              config:
+                severity: warn
+
+      - name: tip_amount 
+        tests:
+          - non_negative
+
+      - name: tolls_amount 
+        tests:
+          - non_negative
+          - max_less_than: 
+              max_value: 60
+              config:
+                severity: warn
+
+      - name: improvement_surcharge 
+        tests:
+          - non_negative
+          - max_less_than: 
+              max_value: 60
+              config:
+                severity: warn
+
+      - name: total_amount 
+        tests:
+          - non_negative
+
+      - name: congestion_surcharge 
+        tests:
+          - non_negative
+
+      - name: airport_fee 
+        tests:
+          - non_negative
+          - max_less_than: 
+              max_value: 150
+              config:
+                severity: warn
+      
+      - name: pickup_datetime_utc
+        tests:
+          - not_null
+          - column_a_lte_column_b:
+              column_b: dropoff_datetime_utc
+          - max_timestamp_lte_fixed:
+              value: '2025-08-31'
+          - min_timestamp_gte_fixed:
+              value: '2015-01-01'
+      
+      - name: dropoff_datetime_utc
+        tests:
+          - not_null
+          - max_timestamp_lte_fixed:
+              value: '2025-08-31'
+          - min_timestamp_gte_fixed:
+              value: '2015-01-01'
