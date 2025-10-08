@@ -1,0 +1,266 @@
+PU_ZONE_SK,ZONE_ID,BOROUGH,P50_DURATION_SECONDS,P90_DURATION_SECONDS
+5,Arden Heights,Staten Island,3503.500,5800.200
+86,Far Rockaway,Queens,3320.000,5782.100
+117,Hammels/Arverne,Queens,3091.000,5541.000
+118,Heartland Village/Todt Hill,Staten Island,1058.000,5113.000
+201,Rockaway Park,Queens,2423.500,5107.000
+55,Coney Island,Brooklyn,2166.000,5055.000
+44,Charleston/Tottenville,Staten Island,2677.000,4610.600
+156,Mariners Harbor,Staten Island,1397.000,4446.400
+139,Laurelton,Queens,2076.000,4418.000
+109,Great Kills,Staten Island,300.000,4362.000
+38,Cambria Heights,Queens,1978.000,4344.000
+29,Brighton Beach,Brooklyn,1381.000,4239.000
+108,Gravesend,Brooklyn,1570.000,4229.000
+203,Rosedale,Queens,1763.500,4204.000
+222,Starrett City,Brooklyn,1929.000,4184.000
+39,Canarsie,Brooklyn,1697.000,4184.000
+51,Co-Op City,Bronx,1841.500,4178.000
+99,Freshkills Park,Staten Island,2755.500,4146.300
+205,Saint Albans,Queens,1941.000,4133.000
+218,Springfield Gardens North,Queens,1722.000,4102.000
+46,City Island,Bronx,1977.000,4074.600
+10,Baisley Park,Queens,2446.000,4072.000
+219,Springfield Gardens South,Queens,2216.500,4072.000
+81,Eastchester,Bronx,1576.000,4043.100
+23,Bloomfield/Emerson Hill,Staten Island,2009.000,4019.800
+91,Flatlands,Brooklyn,1538.000,3997.000
+155,Marine Park/Mill Basin,Brooklyn,1459.000,3986.799
+191,Queens Village,Queens,1575.000,3963.000
+132,JFK Airport,Queens,2321.000,3949.000
+32,Bronxdale,Bronx,1393.000,3947.000
+176,Oakwood,Staten Island,641.000,3941.600
+254,Williamsbridge/Olinville,Bronx,1500.000,3921.000
+259,Woodlawn/Wakefield,Bronx,1312.000,3846.000
+183,Pelham Bay,Bronx,1406.000,3789.599
+76,East New York,Brooklyn,1597.000,3785.000
+21,Bensonhurst East,Brooklyn,1383.000,3764.900
+72,East Flatbush/Remsen Village,Brooklyn,1447.500,3762.000
+35,Brownsville,Brooklyn,1551.000,3744.200
+77,East New York/Pennsylvania Avenue,Brooklyn,1613.500,3720.299
+149,Madison,Brooklyn,1351.500,3695.000
+215,South Jamaica,Queens,2154.000,3693.000
+22,Bensonhurst West,Brooklyn,1258.000,3690.000
+71,East Flatbush/Farragut,Brooklyn,1445.000,3682.000
+3,Allerton/Pelham Gardens,Bronx,1384.000,3673.000
+150,Manhattan Beach,Brooklyn,1274.000,3661.000
+175,Oakland Gardens,Queens,1218.000,3626.000
+27,Breezy Point/Fort Tilden/Riis Beach,Queens,901.000,3594.600
+11,Bath Beach,Brooklyn,1144.000,3576.200
+136,Kingsbridge Heights,Bronx,1190.000,3536.000
+171,Murray Hill-Queens,Queens,1255.000,3517.000
+165,Midwood,Brooklyn,1273.000,3506.000
+122,Hollis,Queens,1057.000,3501.800
+123,Homecrest,Brooklyn,1112.000,3501.000
+241,Van Cortlandt Village,Bronx,1128.000,3468.000
+197,Richmond Hill,Queens,997.000,3465.400
+131,Jamaica Estates,Queens,1192.000,3460.000
+98,Fresh Meadows,Queens,1099.500,3455.899
+180,Ozone Park,Queens,1193.000,3449.200
+101,Glen Oaks,Queens,1311.000,3437.600
+63,Cypress Hills,Brooklyn,1490.000,3422.800
+124,Howard Beach,Queens,1412.000,3405.000
+115,Grymes Hill/Clifton,Staten Island,934.500,3402.000
+15,Bay Terrace/Fort Totten,Queens,1253.000,3389.600
+248,West Farms/Bronx River,Bronx,1124.000,3388.000
+204,Rossville/Woodrow,Staten Island,91.000,3378.300
+213,Soundview/Castle Hill,Bronx,1333.000,3370.000
+26,Borough Park,Brooklyn,1161.000,3367.000
+210,Sheepshead Bay,Brooklyn,710.500,3362.000
+73,East Flushing,Queens,1155.000,3338.900
+227,Sunset Park East,Brooklyn,1323.000,3327.000
+182,Parkchester,Bronx,1185.000,3326.799
+2,Jamaica Bay,Queens,1395.500,3317.800
+208,Schuylerville/Edgewater Park,Bronx,1168.000,3302.500
+258,Woodhaven,Queens,1205.000,3301.000
+200,Riverdale/North Riverdale/Fieldston,Bronx,1311.000,3290.000
+14,Bay Ridge,Brooklyn,1195.000,3279.000
+85,Erasmus,Brooklyn,1170.000,3276.500
+58,Country Club,Bronx,1031.000,3272.200
+18,Bedford Park,Bronx,1012.000,3269.700
+177,Ocean Hill,Brooklyn,1263.000,3267.000
+216,South Ozone Park,Queens,724.000,3262.000
+78,East Tremont,Bronx,1124.000,3250.700
+20,Belmont,Bronx,1009.000,3246.000
+214,South Beach/Dongan Hills,Staten Island,887.500,3220.500
+174,Norwood,Bronx,1123.000,3210.900
+67,Dyker Heights,Brooklyn,1177.000,3188.000
+16,Bayside,Queens,1142.000,3187.000
+47,Claremont/Bathgate,Bronx,1024.000,3171.000
+60,Crotona Park East,Bronx,1063.000,3168.000
+235,University Heights/Morris Heights,Bronx,1067.000,3159.000
+64,Douglaston,Queens,1202.000,3157.600
+59,Crotona Park,Bronx,1105.000,3139.200
+30,Broad Channel,Queens,631.500,3137.100
+84,Eltingville/Annadale/Prince's Bay,Staten Island,91.000,3136.400
+94,Fordham South,Bronx,1002.000,3128.100
+19,Bellerose,Queens,947.000,3117.000
+250,Westchester Village/Unionport,Bronx,1018.000,3102.500
+31,Bronx Park,Bronx,1103.000,3084.000
+147,Longwood,Bronx,1127.000,3032.000
+172,New Dorp/Midland Beach,Staten Island,675.000,3025.000
+138,LaGuardia Airport,Queens,1725.000,3021.000
+89,Flatbush/Ditmas Park,Brooklyn,1063.000,3016.000
+184,Pelham Bay Park,Bronx,938.000,3006.000
+185,Pelham Parkway,Bronx,1006.000,3002.600
+252,Whitestone,Queens,1124.000,3000.400
+121,Hillcrest/Pomonok,Queens,1155.000,2984.000
+169,Mount Hope,Bronx,969.000,2975.299
+28,Briarwood/Jamaica Hills,Queens,1345.000,2944.000
+240,Van Cortlandt Park,Bronx,906.500,2923.200
+167,Morrisania/Melrose,Bronx,988.000,2923.000
+242,Van Nest/Morris Park,Bronx,1064.000,2922.000
+53,College Point,Queens,1182.000,2921.000
+187,Port Richmond,Staten Island,733.500,2899.300
+126,Hunts Point,Bronx,1016.000,2889.000
+178,Ocean Parkway South,Brooklyn,635.000,2870.000
+135,Kew Gardens Hills,Queens,968.000,2826.000
+102,Glendale,Queens,1094.000,2805.000
+62,Crown Heights South,Brooklyn,918.000,2802.000
+9,Auburndale,Queens,1046.000,2792.000
+70,East Elmhurst,Queens,1527.000,2778.000
+188,Prospect-Lefferts Gardens,Brooklyn,926.000,2772.000
+195,Red Hook,Brooklyn,1224.000,2744.000
+253,Willets Point,Queens,1248.500,2695.500
+212,Soundview/Bruckner,Bronx,761.000,2642.000
+69,East Concourse/Concourse Village,Bronx,912.000,2639.000
+93,Flushing Meadows-Corona Park,Queens,1424.000,2630.100
+56,Corona,Queens,1060.000,2624.000
+225,Stuyvesant Heights,Brooklyn,848.000,2597.000
+119,Highbridge,Bronx,941.000,2594.200
+130,Jamaica,Queens,881.000,2593.000
+154,Marine Park/Floyd Bennett Field,Brooklyn,922.000,2582.400
+220,Spuyten Duyvil/Kingsbridge,Bronx,871.000,2578.000
+206,Saint George/New Brighton,Staten Island,694.000,2528.000
+251,Westerleigh,Staten Island,486.000,2520.000
+160,Middle Village,Queens,966.000,2475.500
+228,Sunset Park West,Brooklyn,821.000,2460.900
+61,Crown Heights North,Brooklyn,811.000,2450.000
+96,Forest Park/Highland Park,Queens,823.000,2437.600
+198,Ridgewood,Queens,873.000,2432.600
+57,Corona,Queens,780.000,2416.000
+92,Flushing,Queens,821.000,2376.400
+133,Kensington,Brooklyn,813.000,2360.000
+153,Marble Hill,Manhattan,760.500,2302.500
+128,Inwood Hill Park,Manhattan,879.000,2294.800
+192,Queensboro Hill,Queens,872.000,2293.300
+194,Randalls Island,Manhattan,1041.000,2284.000
+257,Windsor Terrace,Brooklyn,763.000,2241.400
+159,Melrose South,Bronx,788.000,2230.300
+202,Roosevelt Island,Manhattan,836.000,2223.000
+110,Great Kills Park,Staten Island,830.000,2216.200
+221,Stapleton,Staten Island,666.000,2213.300
+157,Maspeth,Queens,945.000,2208.000
+199,Rikers Island,Bronx,884.000,2156.200
+245,West Brighton,Staten Island,669.500,2130.399
+12,Battery Park,Manhattan,1109.000,2121.500
+247,West Concourse,Bronx,731.000,2085.000
+190,Prospect Park,Brooklyn,804.000,2057.000
+105,Governor's Island/Ellis Island/Liberty Island,Manhattan,861.000,2041.600
+261,World Trade Center,Manhattan,987.000,2012.000
+88,Financial District South,Manhattan,999.000,2000.000
+196,Rego Park,Queens,829.000,1965.000
+127,Inwood,Manhattan,709.000,1952.000
+6,Arrochar/Fort Wadsworth,Staten Island,498.000,1947.000
+120,Highbridge Park,Manhattan,656.000,1940.800
+243,Washington Heights North,Manhattan,724.000,1911.000
+111,Green-Wood Cemetery,Brooklyn,585.000,1905.999
+173,North Corona,Queens,602.000,1898.000
+17,Bedford,Brooklyn,628.000,1897.000
+37,Bushwick South,Brooklyn,675.000,1897.000
+87,Financial District North,Manhattan,938.000,1883.000
+52,Cobble Hill,Brooklyn,798.000,1883.000
+8,Astoria Park,Queens,809.000,1876.000
+33,Brooklyn Heights,Brooklyn,883.000,1874.000
+45,Chinatown,Manhattan,811.000,1869.000
+36,Bushwick North,Brooklyn,733.000,1859.000
+168,Mott Haven/Port Morris,Bronx,623.000,1851.000
+13,Battery Park City,Manhattan,897.000,1838.000
+244,Washington Heights South,Manhattan,788.000,1818.000
+209,Seaport,Manhattan,854.000,1804.000
+66,DUMBO/Vinegar Hill,Brooklyn,901.000,1803.000
+40,Carroll Gardens,Brooklyn,716.000,1800.000
+226,Sunnyside,Queens,779.000,1800.000
+65,Downtown Brooklyn/MetroTech,Brooklyn,794.000,1791.000
+49,Clinton Hill,Brooklyn,666.000,1789.000
+181,Park Slope,Brooklyn,700.000,1784.000
+54,Columbia Street,Brooklyn,756.000,1778.000
+189,Prospect Heights,Brooklyn,685.000,1771.800
+134,Kew Gardens,Queens,616.000,1769.000
+217,South Williamsburg,Brooklyn,585.000,1762.000
+34,Brooklyn Navy Yard,Brooklyn,723.000,1755.000
+106,Gowanus,Brooklyn,639.000,1736.000
+25,Boerum Hill,Brooklyn,717.000,1730.000
+230,Times Sq/Theatre District,Manhattan,713.000,1715.000
+223,Steinway,Queens,561.000,1708.000
+231,TriBeCa/Civic Center,Manhattan,748.000,1698.000
+95,Forest Hills,Queens,667.000,1682.000
+264,,Unknown,637.000,1680.000
+97,Fort Greene,Brooklyn,736.000,1676.000
+255,Williamsburg (North Side),Brooklyn,771.000,1656.000
+211,SoHo,Manhattan,714.000,1636.000
+186,Penn Station/Madison Sq West,Manhattan,755.000,1631.000
+83,Elmhurst/Maspeth,Queens,619.000,1622.000
+179,Old Astoria,Queens,573.000,1610.000
+125,Hudson Sq,Manhattan,659.000,1608.000
+232,Two Bridges/Seward Park,Manhattan,767.000,1607.000
+144,Little Italy/NoLiTa,Manhattan,736.000,1606.000
+260,Woodside,Queens,645.000,1605.000
+256,Williamsburg (South Side),Brooklyn,729.000,1604.000
+116,Hamilton Heights,Manhattan,664.000,1603.000
+145,Long Island City/Hunters Point,Queens,552.000,1593.000
+166,Morningside Heights,Manhattan,647.000,1590.000
+129,Jackson Heights,Queens,577.000,1587.000
+146,Long Island City/Queens Plaza,Queens,627.000,1583.000
+80,East Williamsburg,Brooklyn,672.000,1578.000
+82,Elmhurst,Queens,650.000,1565.000
+163,Midtown North,Manhattan,681.000,1561.000
+68,East Chelsea,Manhattan,695.000,1550.000
+112,Greenpoint,Brooklyn,690.000,1547.000
+158,Meatpacking/West Village West,Manhattan,718.000,1544.000
+100,Garment District,Manhattan,655.000,1538.000
+161,Midtown Center,Manhattan,696.000,1527.000
+43,Central Park,Manhattan,652.000,1523.000
+113,Greenwich Village North,Manhattan,629.000,1501.000
+7,Astoria,Queens,532.000,1499.000
+114,Greenwich Village South,Manhattan,660.000,1498.000
+246,West Chelsea/Hudson Yards,Manhattan,729.000,1495.000
+42,Central Harlem North,Manhattan,518.000,1492.000
+24,Bloomingdale,Manhattan,601.000,1479.000
+148,Lower East Side,Manhattan,724.000,1477.000
+164,Midtown South,Manhattan,656.000,1477.000
+249,West Village,Manhattan,634.000,1470.000
+48,Clinton East,Manhattan,621.000,1470.000
+162,Midtown East,Manhattan,683.000,1467.000
+234,Union Sq,Manhattan,646.000,1461.000
+75,East Harlem South,Manhattan,544.000,1455.000
+50,Clinton West,Manhattan,644.000,1455.000
+152,Manhattanville,Manhattan,596.000,1452.000
+233,UN/Turtle Bay South,Manhattan,685.000,1451.000
+140,Lenox Hill East,Manhattan,646.000,1445.000
+4,Alphabet City,Manhattan,684.000,1444.000
+90,Flatiron,Manhattan,592.000,1440.000
+193,Queensbridge/Ravenswood,Queens,236.000,1426.000
+79,East Village,Manhattan,653.000,1422.000
+170,Murray Hill,Manhattan,654.000,1422.000
+41,Central Harlem,Manhattan,522.000,1418.000
+207,Saint Michaels Cemetery/Woodside,Queens,82.000,1412.000
+151,Manhattan Valley,Manhattan,563.000,1406.000
+107,Gramercy,Manhattan,619.000,1390.000
+236,Upper East Side North,Manhattan,550.000,1379.000
+142,Lincoln Square East,Manhattan,608.000,1379.000
+238,Upper West Side North,Manhattan,548.000,1368.000
+239,Upper West Side South,Manhattan,557.000,1368.000
+143,Lincoln Square West,Manhattan,579.000,1360.000
+137,Kips Bay,Manhattan,604.000,1358.000
+224,Stuy Town/Peter Cooper Village,Manhattan,634.000,1346.000
+229,Sutton Place/Turtle Bay North,Manhattan,599.000,1337.000
+263,Yorkville West,Manhattan,526.000,1335.000
+262,Yorkville East,Manhattan,585.000,1324.000
+74,East Harlem North,Manhattan,594.000,1321.000
+237,Upper East Side South,Manhattan,533.000,1317.000
+141,Lenox Hill West,Manhattan,537.000,1303.000
+104,Governor's Island/Ellis Island/Liberty Island,Manhattan,576.000,1246.600
+265,Outside of NYC,,43.000,1162.000
+103,Governor's Island/Ellis Island/Liberty Island,Manhattan,833.000,910.600
+1,Newark Airport,EWR,14.000,87.000
